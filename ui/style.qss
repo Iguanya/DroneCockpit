@@ -1,0 +1,44 @@
+/* Dark theme (Tailwind gray palette) */
+QWidget { background-color: #111827; color: #E5E7EB; font-size: 13px; }
+QMainWindow, QDialog { background-color: #111827; }
+
+QToolBar { background: #1F2937; border: none; border-bottom: 1px solid #374151; spacing: 10px; padding: 4px 8px; }
+QToolBar QLabel { background: transparent; padding: 0 6px; }
+QToolButton { background: #374151; border: 1px solid #4B5563; border-radius: 4px; padding: 5px 10px; }
+QToolButton:hover { background: #4B5563; }
+QToolButton:checked { background: #B45309; border-color: #F59E0B; color: white; }
+
+QStatusBar { background: #1F2937; border-top: 1px solid #374151; color: #9CA3AF; }
+QStatusBar QLabel { background: transparent; padding: 0 8px; }
+QStatusBar::item { border: none; }
+
+QSplitter::handle { background: #374151; }
+QSplitter::handle:horizontal { width: 2px; }
+
+QTabWidget::pane { border: 1px solid #374151; top: -1px; }
+QTabBar::tab { background: #1F2937; color: #9CA3AF; padding: 7px 14px; border: 1px solid #374151; border-bottom: none; }
+QTabBar::tab:selected { background: #111827; color: #F9FAFB; border-top: 2px solid #3B82F6; }
+
+QPushButton { background: #374151; border: 1px solid #4B5563; border-radius: 4px; padding: 7px 12px; }
+QPushButton:hover { background: #4B5563; }
+QPushButton:pressed { background: #1F2937; }
+QPushButton:disabled { color: #6B7280; background: #1F2937; border-color: #374151; }
+QPushButton[danger="true"] { background: #7F1D1D; border-color: #B91C1C; }
+QPushButton[danger="true"]:hover { background: #991B1B; }
+QPushButton[danger="true"]:disabled { background: #1F2937; border-color: #374151; }
+QPushButton[primary="true"] { background: #1D4ED8; border-color: #3B82F6; font-weight: 600; }
+QPushButton[primary="true"]:hover { background: #2563EB; }
+
+QPlainTextEdit { background: #0B1120; border: 1px solid #374151; font-size: 12px; }
+QListView { background: #111827; border: none; outline: 0; }
+QLabel { background: transparent; }
+
+QDoubleSpinBox, QSpinBox, QLineEdit { background: #1F2937; border: 1px solid #4B5563; border-radius: 3px; padding: 3px 6px; }
+
+QScrollBar:vertical { background: #111827; width: 10px; margin: 0; }
+QScrollBar::handle:vertical { background: #4B5563; border-radius: 4px; min-height: 24px; }
+QScrollBar::add-line, QScrollBar::sub-line { height: 0; width: 0; }
+QScrollBar:horizontal { background: #111827; height: 10px; }
+QScrollBar::handle:horizontal { background: #4B5563; border-radius: 4px; min-width: 24px; }
+
+QToolTip { background: #1F2937; color: #E5E7EB; border: 1px solid #4B5563; }

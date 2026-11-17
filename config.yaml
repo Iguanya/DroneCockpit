@@ -1,0 +1,44 @@
+map:
+  center:
+  - 28.6139
+  - 77.209
+  geofences:
+  - kind: keepin
+    lat: 28.6139
+    lon: 77.209
+    name: Operating area
+    radius: 800.0
+  - kind: keepout
+    lat: 28.6215
+    lon: 77.215
+    name: No-fly zone
+    radius: 150.0
+  tile_url: https://tile.openstreetmap.org/{z}/{x}/{y}.png
+  trail_interval: 1.0
+  trail_length: 50
+  zoom: 13
+mock:
+  drones: 12
+  rate_hz: 10
+mock_mode: true
+mqtt:
+  broker: 192.168.1.100
+  client_id: drone-cockpit-1
+  keepalive: 60
+  password: ''
+  port: 1883
+  username: ''
+security:
+  allowed_drones:
+  - 1
+  - 2
+  - 3
+  - 4
+telemetry:
+  history_seconds: 300
+  lora_grace: 6.0
+  lost_timeout: 5.0
+  stale_timeout: 2.0
+theme: dark
+ui:
+  software_rendering: false
